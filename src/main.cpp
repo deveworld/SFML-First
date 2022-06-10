@@ -86,6 +86,7 @@ int main()
 
     while (window.waitEvent(event))
     {
+        
         if (event.type == Event::Closed)
         {
             window.close();

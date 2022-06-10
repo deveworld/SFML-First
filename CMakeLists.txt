@@ -22,5 +22,6 @@ add_executable(
 set(SFML_LIBS sfml-audio sfml-network sfml-system sfml-window sfml-graphics)
 
 target_link_libraries(${PROJECT_NAME} ${SFML_LIBS})
+target_include_directories(${PROJECT_NAME} PRIVATE "include" "lib")
 
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
